@@ -27,6 +27,11 @@ const changeMusic = [
   "Shunday_ketmasmiz",
   "Sog_indim",
   "Xoqon_yagona",
+  "Shakarchimi",
+  "Sitora",
+  "Surune",
+  "Qirmizi_olma",
+  "Benimki",
 ];
 
 const modalMusic = () => {

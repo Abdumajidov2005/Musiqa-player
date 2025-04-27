@@ -75,10 +75,9 @@ body.active .list {
   background-color: black;
 }
 
-.list ul {
+.list ol {
   text-align: left;
   padding-left: 30px;
-  list-style: none;
   overflow-y: auto;
   scrollbar-color: rgba(0, 0, 0, 0.03) rgba(0, 0, 0, 0);
   scrollbar-width: thin;
@@ -86,7 +85,7 @@ body.active .list {
 
 }
 
-ul li {
+ol li {
   margin-bottom: 20px;
   cursor: pointer;
 }
