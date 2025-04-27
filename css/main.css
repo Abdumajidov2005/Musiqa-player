@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../imgs/nasa.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-size: 200% 100%;
+  height: 100vh;
+  animation: gradientAnimation 70s ease infinite;
+}
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.music_player {
+  width: 400px;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 2px white;
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(1px);
+  background-color: rgba(0, 0, 0, 0.425);
+  position: relative;
+  overflow: hidden;
+}
+
+.list {
+  top: 0px;
+  left: -500px;
+  width: 200px;
+  background-color: black;
+  box-shadow: 0px 0px 10px 2px white;
+  z-index: 99;
+  position: absolute;
+  border-radius: 20px 0px 30px 0px;
+  transition: all 0.3s ease;
+  padding-top: 10px;
+ 
+}
+
+body.active .list {
+  left: 0px;
+}
+
+.exit_list {
+  position: absolute;
+  top: 8px;
+  right: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: black;
+}
+
+.list ul {
+  text-align: left;
+  padding-left: 30px;
+  list-style: none;
+  overflow-y: auto;
+  scrollbar-color: rgba(0, 0, 0, 0.03) rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+  height: 150px;
+
+}
+
+ul li {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .select{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.qadash {
+  top: 30px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.img_box img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cover {
+  animation: anime 4s linear infinite;
+  animation-play-state: paused;
+}
+
+body.done .cover {
+  animation-play-state: running;
+}
+
+@keyframes anime {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.music_player h1,
+.music_player img {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.music_siljish {
+  margin-top: 20px;
+  height: 7px;
+  width: 100%;
+  /* padding: .5px; */
+  border-radius: 200px 200px 200px 200px;
+  background-color: white;
+  margin-bottom: 30px;
+  cursor: pointer;
+  /* border: .01px solid #76707C; */
+}
+
+.music_siljish_rangi {
+  border-radius: 200px 200px 200px 200px;
+  border: none;
+  height: 100%;
+  width: 0%;
+  border: 0.1px solid blue;
+  background-color: blue;
+}
+
+
+
+
+
+.control {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+span {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.music_info input {
+  width: 80%;
+  margin: 50px 0px;
+}
+
+.time {
+  padding-top: 30px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.pause_icon {
+  display: none;
+}
+
+body.done .pause_icon {
+  display: block;
+}
+
+body.done .play_icon {
+  display: none;
+}
+
+.repeat{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 20px;
+}
+
+.repeat.done{
+    background-color: white;
+    color: blue;
+}
+.shuffle{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 20px;
+}
+
+.shuffle.done{
+    background-color: white;
+    color: blue;
+}

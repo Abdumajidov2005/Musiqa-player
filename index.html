@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musiqa player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <div class="music_player">
+      <div class="list">
+        <div class="exit_list">
+          <p>
+            <i class="fa-solid fa-xmark"></i>
+          </p>
+        </div>
+        <h1>Musiqalar</h1>
+        <ul class="music_list">
+        
+        </ul>
+      </div>
+      <nav>
+        <div class="qadash">
+          <p>
+            <i class="fa-solid fa-bars"></i>
+          </p>
+        </div>
+        <p class="select">0/0</p>
+      </nav>
+      <h1 class="title"></h1>
+      <audio  src=""></audio>
+      <div class="img_box">
+        <img class="cover" src="" alt="" />
+      </div>
+      <input class="voice" type="range" min="0" max="100" value="100" />
+      <div class="time">
+        <h2 class="startTime">00 : 00</h2>
+        <h2 class="endTime">00 : 00</h2>
+      </div>
+      <div class="music_siljish">
+        <div class="music_siljish_rangi"></div>
+      </div>
+      <div class="control">
+        <span class="shuffle"><i class="fa-solid fa-shuffle"></i></span>
+        <span class="next_left"><i class="fa-solid fa-backward"></i></span>
+        <span class="play_btn">
+          <i class="fa-solid fa-pause pause_icon"></i>
+          <i class="fa-solid fa-play play_icon"></i>
+        </span>
+        <span class="next_right"><i class="fa-solid fa-forward"></i></span>
+        <span class="repeat"><i class="fa-solid fa-repeat"></i></span>
+      </div>
+    </div>
+    <!-- <h1>Musiqa Playeri</h1> -->
+    <!-- <audio id="audioPlayer" controls autoplay>
+        <source src="./music/May_ichsam.mp3" type="audio/mp3"> 
+        Sizning brauzeringiz audio faylini qo'llab-quvvatlamaydi.
+    </audio> -->
+  </body>
+  <script src="./js/main.js"></script>
+</html>
